@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-xl p-6 bg-gray-800 rounded-xl shadow-lg text-center">
+    <h1 class="text-3xl font-bold mb-6">🧠 Quiz App</h1>
+
+    <div id="quiz-container" class="space-y-4 hidden">
+      <div id="question" class="text-xl font-semibold"></div>
+      <div id="answers" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+      <button id="next-btn" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">Next</button>
+    </div>
+
+    <div id="start-screen">
+      <button id="start-btn" class="px-6 py-3 bg-green-600 hover:bg-green-700 text-xl rounded">Start Quiz</button>
+    </div>
+
+    <div id="result" class="mt-6 text-xl font-medium hidden"></div>
+    <button id="retry-btn" class="mt-4 px-4 py-2 bg-yellow-600 hover:bg-yellow-700 text-white rounded hidden">Try Again</button>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
